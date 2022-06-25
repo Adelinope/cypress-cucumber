@@ -1,0 +1,9 @@
+{
+  "video": false,
+  "chromeWebSecurity":false,
+  "defaultCommandTimeout": 10000,
+  "watchForFileChanges": false,
+  "testFiles": "**/*.feature",
+  "screenshotsFolder":"cypress/cucumber-json",
+  "screenshotsFailure":true
+}
