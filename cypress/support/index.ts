@@ -17,6 +17,6 @@
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-import './host'
-import './access'
+
+import './commands'
 import 'cypress-cucumber-attach-screenshots-to-failed-steps';
