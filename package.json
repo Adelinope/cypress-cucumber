@@ -1,7 +1,6 @@
 {
   "name": "cypress-actions",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
@@ -28,5 +27,14 @@
     "cucumberJson": {
       "generate": true
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adelinope/cypress-ts-bdd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adelinope/cypress-ts-bdd/issues"
+  },
+  "homepage": "https://github.com/Adelinope/cypress-ts-bdd#readme",
+  "description": ""
 }

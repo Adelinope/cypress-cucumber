@@ -23,7 +23,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 948000000
+              "duration": 840000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I submit login",
             "result": {
               "status": "passed",
-              "duration": 844000000
+              "duration": 884000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I should see homepage",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 28000000
             }
           }
         ]
