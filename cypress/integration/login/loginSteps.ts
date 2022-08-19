@@ -1,6 +1,6 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps"
-import LoginPage from '../pageObjects/LoginPage'
-import HomePage from '../pageObjects/HomePage'
+import LoginPage from '../../support/pages/LoginPage'
+import HomePage from '../../support/pages/HomePage'
 
 When('I submit login with {string} and {string}',(username, password) => {
    LoginPage.fillUsername(username)

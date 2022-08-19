@@ -21,4 +21,4 @@ Feature: Login to Application
 
         Examples:
             | username         | password        | 
-            | 'invalid_user'  | 'secret_sauce'  |
+            | 'invalid_user'   | 'secret_sauce'  |
