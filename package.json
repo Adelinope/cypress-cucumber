@@ -5,7 +5,6 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run --browser chrome",
-    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
     "cy:report": "node ./cypress/report.js"
   },
   "keywords": [],
