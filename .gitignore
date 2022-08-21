@@ -1,3 +1,2 @@
-/node_modules
-/cypress/cucumber-json
-/cypress/cucumber-report
+/jsonlogs
+/reports
