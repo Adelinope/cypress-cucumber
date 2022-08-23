@@ -1,21 +1,17 @@
-class BasePage{
-    
-      getElementByContainsText(text) {
-        return cy.contains(text)
-      }
-    
-      selectById(selectBoxId, selectText) {
-        return cy.get(selectBoxId).select(selectText)
-      }
-    
-      typeInputValueById(inputId, value) {
-        return cy.get(inputId).type(value)
-      }
-    
-      typeTextAreaValueById(textAreaId, value) {
-        return cy.get(textAreaId).type(value)
-      }   
+class BasePage {  
+   
+    getIconCart(){
+        return '[class=shopping_cart_link]'
+    }
 
-} 
+    getValueIconCart(value){
+         cy.get(this.getIconCart()).children().should('have.text',value)
+    }
+   
+    validateNumberProductsCart(numberItens){
+        this.getValueIconCart(numberItens)
+       cy.log('The number of itens in cart is '+numberItens)
+    }
+}
 
 export default BasePage
