@@ -13,8 +13,10 @@ module.exports = defineConfig({
       await addCucumberPreprocessorPlugin(on, config);
       return config;
     },
-    
+    video: false,
+    chromeWebSecurity:false,
+    defaultCommandTimeout: 10000,
+    watchForFileChanges: true,
     specPattern: "cypress/e2e/*.feature",
-    chromeWebSecurity: false
   },
 });

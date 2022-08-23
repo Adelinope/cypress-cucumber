@@ -1,21 +1,33 @@
-const USER_NAME = "#user-name"
-const USER_PASSWORD = "#password"
-const SUBMIT_BUTTON = "#login-button"
-const ERROR_LABEL = 'div>h3[data-test~="error"]'
+import BasePage from "./BasePage"
 
-class LoginPage {
-    static fillUsername(name){
-        cy.get(USER_NAME).type(name)
+
+class LoginPage extends BasePage{
+
+    getUserName() { return '#user-name' }
+    getUserPassword() { return '#password' }
+    getSubmitButton() { return '#login-button' }
+    getErrorLabel() { return 'div>h3[data-test~="error"]' }
+
+    fillUsername(name) {
+        cy.log(this.getUserName())
+        cy.get(this.getUserName()).type(name)
+        cy.log('Fill username with sucess')
     }
-    static fillPassword(password){
-        cy.get(USER_PASSWORD).type(password)
+
+    fillPassword(password) {
+        cy.get(this.getUserPassword()).type(password)
+        cy.log('Fill password with sucess')
     }
-    static clickSubmit(){
-        cy.get(SUBMIT_BUTTON).click()
+
+    clickSubmit() {
+        cy.get(this.getSubmitButton()).click()
+        cy.log('Click on submit with sucess')
     }
-    static validadeErrorLabel(){
-        cy.get(ERROR_LABEL).should('be.visible')
+
+    validadeErrorLabel() {
+        cy.isPresent(this.getErrorLabel())
+        cy.log('Erro label is present')
     }
 }
 
-export default LoginPage
+export const loginPage = new LoginPage()
